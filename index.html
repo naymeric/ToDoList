@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+
+<body>
+
+    <header>
+        <h1>TO DO LIST</h1>
+    </header>
+
+    <main>
+
+        <div id="toDoListContenair">
+
+            <!-- Zone bleue avec les boutons -->
+            <div id="hautContenair">
+                <p id="dateUn"></p>
+
+                <button id="addButton" type="button">AJOUTER UNE TACHE</button>
+                <button id="finishButton" type="button">TERMINE</button>
+            </div>
+
+            <!-- Zone de saisie -->
+            <div id="MillieuContenair">
+                <input type="text" id="saisie" placeholder="Saisissez votre tache">
+            </div>
+
+            <!-- Zone affichant les tâches saisient/validées par l'utilisateur -->
+            <div id="basContenair">
+                <ul id="taskList">
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
